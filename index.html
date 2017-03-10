@@ -1,162 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Bootstrap Tutorial</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <style>
 body {
-    margin: 0px;
-    padding: 0px;
-    background: #DFE6EC;
+    background:#DFE6EC;
+    margin-top: 65px;
+    margin-bottom: 40px;
 }
-#wrapper {
+.intro {
+  background:#2A3949;
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 0;
+}
+h1{
+letter-spacing: 10pt;
+font-size: 60pt;
+text-align: center;
+z-index: 1;
+} 
+#creditcard{
+  position:relative;
+  right: 15%;
+  width:30%;
+  z-index: -1;
+}
+#chart{
+  position:relative;
+  top: -180px;
+  left: 30%;
   width:80%;
-  margin: 10%;
-  background-color: #243241;
-  padding: 0px;
-  height:2700px;
-  text-align:center;
+  z-index:1;
 }
 
-/* MENU */
-a:link {text-decoration:none}
-a:visited {text-decoration:none}
-a:hover {text-decoration:underline}
-#menu {
-    float: right;
-    width: 700px;
-    margin: -10% 0%;
-}
-#menu ul {
-    float: right;
-    list-style: none;
-    line-height: normal;
-}
-#menu li {
-    float: left;
-    padding: 0px 0px 0px 0px;
-}
-#menu a {
-    display: block;
-    margin-right: 1px;
-    padding: 10px 20px 10px 10px;
-    font-family: Georgia;
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
-    border: none;
-}
-#menu .current_page_item a {
-    text-decoration: none;
-    color:pink;
-}
-#menu .current_page_item a {
-  text-decoration:underline;
-  color:black;
-}
-
-h1 {
-    font-family: 'Montserrat';
-    font-weight: normal;
+.about {
+    background:#2A3949;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
     color: white;
-  font-size:80px;
-  letter-spacing:5px;
-  position:relative;
-  top:100px;
+    z-index: 0
 }
-#card{
-  
-}
-#chart {
-
-}
-
 #brown{
-  width: 1000px;
-  height: 500px;
-  background: #BC916C;
-  position:relative;
-  top:500px;
-  left:-5%;
+  background-color: #BB966A;
+  width:720px;
+  height: 350px;
+  position: relative;
+  right:15%;
+  z-index: 1
+}
+#pic1{
+  width:60%;
+  position: relative;
+  right: 15%;
+  top:50px;
+  z-index: 3
 }
 #white1{
-  width: 550px;
-  height: 350px;
-  background: white;
+  width:70%;
   position: relative;
-  top:15%;
-  right:-78%;
+  bottom:300px;
+  left:48%;
+  z-index: 2
 }
 
+.services {
+    background:#2A3949;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
 #red{
-  width: 1000px;
-  height: 500px;
-  background: #C15245;
+  background-color: #C35348;
+  width:720px;
+  height: 350px;
   position: relative;
-  top:700px;
-  right:-23%
+  left:17%;
+  top:300px;
+}
+#video{
+  width:85%;
+  position:relative;
+  left:10%;
+  top:8%;
 }
 #white2{
-  width: 550px;
-  height: 350px;
-  background: white;
+  width:45%;
   position: relative;
-  top:15%;
-  left:-33%
+  right:45%;
+  top:5%;
+  padding-bottom: 80px
 }
 
-#black{
-  width: 1300px;
-  height: 600px;
-  background: #2B293B;
-  position: relative;
-  top:900px;
-  left:-4%
-}
-
-p{
-  font-size:12pt
-}
 </style>
-
 <head>
-<title>Draft of FinTech</title>
+  <title>TinTech</title>
 </head>
-<body>  
-<div id="wrapper">
-    <div id="menu">
-        <ul>
-            <li class="current_page_item"><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
+<body style="background-color: #DFE6EC">
+  <nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1">
+          <div class="navbar-header">
+          <a class="navbar-brand" href="#">JORGEN STUDIO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-7"></div>
+      <div class="col-sm-4">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">CONTACT</a></li>
         </ul>
+      </div>
     </div>
-    <h1>FINTECH</h1>
-    <img src="" id="card">
-    <img src="" id="chart">
+  </nav>
 
-    <div id="brown">
-        <div id="pic1"></div>
-        <div id="white1">
-            <div class="title" id="how">How it works</div>
-            <p id="txt1">text01</p>
-            <p id="txt2">text02</p>
-            <p id="txt3">text03</p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div class="intro">
+          <h1><style="font-family:'Carrois+Gothic', serif;></style>FINTECH</h1>
+          <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet"><!--鑲嵌字型-->
+          <img src="https://goo.gl/lpqUIu" id="creditcard">
+          <img src="https://goo.gl/OVQXNu" id="chart">
         </div>
-    </div>
-
-    <div id="red">
-        <div id="video1"></div>
-        <div id="white2">
-            <div class="title" id="what">Fintech: Sillxxxxx</div>
-            <p id="article">texttexttexxt</p>
+        
+        <div class="about">
+          <div id="brown">
+            <img src="https://goo.gl/cIY2uH" id="pic1">
+            <img src="https://goo.gl/A2fmUJ" id="white1">
+          </div>
         </div>
-    </div>
+        
+        <div class="services">
+          <div id="red">
+            <div class="video-container" id="video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1XWdaHzKAgk" frameborder="0" allowfullscreen></iframe> 
+              </div>
+            </div>
+          </div>
+         <img src="https://goo.gl/1r4zCf" id="white2">  
+        </div>
 
-    <div id="black">
-        <img src="" id="card">
-        <div class="title" id="account">Create an account </div>
-        <p id="info">texttext</p>
-    </div>
-</div>
+        <div class="contact">
+          <div id="black"></div>
+          <!--表單開始-->      
+</div> <!-- /form -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!--重要-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!--重要-->
 </body>
 </html>
