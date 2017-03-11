@@ -6,101 +6,9 @@
 <meta name="viewport" content="width = device-width, initial-scale = 1">
 <title>Bootstrap Tutorial</title>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!--link自己寫的css-->
+<link rel="stylesheet" type="text/css" href="custom.css">
 <style>
-body {
-    background:#DFE6EC;
-    margin-top: 65px;
-    margin-bottom: 40px;
-}
-.intro {
-  background:#2A3949;
-  display: table;
-  width: 100%;
-  height: 100%;
-  color: white;
-  z-index: 0;
-}
-h1{
-letter-spacing: 10pt;
-font-size: 60pt;
-text-align: center;
-z-index: 1;
-} 
-#creditcard{
-  position:relative;
-  right: 15%;
-  width:30%;
-  z-index: -1;
-}
-#chart{
-  position:relative;
-  top: -180px;
-  left: 30%;
-  width:80%;
-  z-index:1;
-}
-
-.about {
-    background:#2A3949;
-    display: table;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: white;
-    z-index: 0
-}
-#brown{
-  background-color: #BB966A;
-  width:720px;
-  height: 350px;
-  position: relative;
-  right:15%;
-  z-index: 1
-}
-#pic1{
-  width:60%;
-  position: relative;
-  right: 15%;
-  top:50px;
-  z-index: 3
-}
-#white1{
-  width:70%;
-  position: relative;
-  bottom:300px;
-  left:48%;
-  z-index: 2
-}
-
-.services {
-    background:#2A3949;
-    display: table;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: white;
-}
-#red{
-  background-color: #C35348;
-  width:720px;
-  height: 350px;
-  position: relative;
-  left:17%;
-  top:300px;
-}
-#video{
-  width:85%;
-  position:relative;
-  left:10%;
-  top:8%;
-}
-#white2{
-  width:45%;
-  position: relative;
-  right:45%;
-  top:5%;
-  padding-bottom: 80px
-}
 
 </style>
 <head>
@@ -160,8 +68,36 @@ z-index: 1;
 
         <div class="contact">
           <div id="black"></div>
-          <!--表單開始-->      
-</div> <!-- /form -->
+          <!--表單開始-->  
+              <div class="form">
+                 <form action="/" method="post">
+                   <div class="top-row">
+                     <label class="sr-only">First Name<span class="req">*</span></label>
+		             <input name="name" placeholder="First Name" class="name" required />
+		             <label class="sr-only">Last Name<span class="req">*</span></label>
+		             <input name="name" placeholder="Last Name" class="name" required />
+		           </div>
+		           <div class="field-wrap">
+                     <label class="sr-only">Email Address<span class="req">*</span></label>
+                     <input name="emailaddress" placeholder="Email Address" class="email" type="email" required />
+                   </div>
+                   <div class="field-wrap">
+                     <label class="sr-only">Phone Number<span class="req">*</span></label>
+                     <input name="emailaddress" placeholder="Phone Number" class="phone" type="email" required />
+                    </div>
+                    <div class="field-wrap">
+                     <label class="sr-only">Set A Password<span class="req">*</span></label>
+                     <input type="password"required placeholder="Password" class="password" autocomplete="off"/>
+                    </div>
+                    <div class="field-wrap">
+                     <label class="sr-only">Set A Password<span class="req">*</span></label>
+                     <input type="password"required placeholder="Confirm Password" class="password" autocomplete="off"/>
+                    </div>
+                    <input name="submit" class="btn" type="submit" value="CREATE" />
+                </form>
+
+
+</div> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!--重要-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!--重要-->
 </body>
