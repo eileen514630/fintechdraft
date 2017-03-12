@@ -1,0 +1,121 @@
+body {
+    background:#DFE6EC;
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+
+.intro {
+  background:#2A3949;
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 0;
+}
+h1{
+letter-spacing: 10pt;
+font-size: 60pt;
+text-align: center;
+z-index: 1;
+} 
+#creditcard{
+  position:relative;
+  right: 15%;
+  width:30%;
+  z-index: -1;
+}
+#chart{
+  position:relative;
+  top: -180px;
+  left: 30%;
+  width:80%;
+  z-index:1;
+}
+
+.about {
+    background:#2A3949;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    z-index: 0;
+}
+#brown{
+  background-color: #BB966A;
+  width:720px;
+  height: 350px;
+  position: relative;
+  right:15%;
+  z-index: 1
+}
+#pic1{
+  width:60%;
+  position: relative;
+  right: 15%;
+  top:10%;
+  z-index: 3
+}
+#white1{
+  width:70%;
+  position: relative;
+  top:-90%;
+  left:45%;
+  z-index: 2
+}
+
+.services {
+    background:#2A3949;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#red{
+  background-color: #C35348;
+  width:720px;
+  height: 350px;
+  position: relative;
+  left:15%;
+  top:250px;
+}
+#video{
+  width:85%;
+  position:relative;
+  right:-12%;
+  top:8%;
+}
+#white2{
+  width:45%;
+  position: relative;
+  right:60%;
+  bottom:280px;
+}
+
+.contact {
+    background:#2A3949;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#blue{
+  background-color: #2C2B3B;
+  width:300px;
+  height: 400px;
+  position: relative;
+  right:10%;
+  top: 300px;
+}
+
+
+#pic3{
+  height:80%;
+  position: relative;
+  top:50px;
+
+
+}
+
