@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>FinTech draft</title>
+<!--載入bootstrap-->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--載入自己寫的css-->
+<link rel="stylesheet" type="text/css" href="custom.css">
+<!--載入jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="custom.js"></script>
+
+<style type="text/css">
+  body {
+  background-color:transparent;
+  width:100%;
+  height:100%;
+  padding-top:100px;
+}
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+    height: 100%;
+    padding:30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #2A2A3C; 
+    overflow: hidden; 
+}
+
+input {
+    height: 48px;
+    width:100%;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 9px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: monospace;
+    font-size:18px;
+    color:#fff;
+    padding-right:20px;
+    margin-bottom:20px;
+}
+
+input[type=submit] {
+    cursor:pointer;
+}
+
+input.name,input.email,input.password, input.phone {
+    background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
+    padding-left:20px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder{ 
+    color: #fff; 
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {  
+    color: #fff; 
+}
+
+input:focus{ 
+    background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden; 
+}
+
+.btn {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  background: #F39800;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #EB6100;
+  text-decoration: none;
+}
+
+
+</style>
+
+<head>
+</head>
+
+<body>
+<div class="form">
+    <form action="/" method="post">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    <label class="sr-only">First Name<span class="req">*</span></label>
+		            <input name="name" placeholder="First Name" class="name" required />
+		        </div>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="form-group">
+		            <label class="sr-only">Last Name<span class="req">*</span></label>
+		            <input name="name" placeholder="Last Name" class="name" required />
+		        </div>
+		    </div>
+		</div>
+		<div class="field-wrap">
+            <label class="sr-only">Email Address<span class="req">*</span></label>
+            <input name="emailaddress" placeholder="Email Address" class="email" type="email" required />
+        </div>
+        <div class="field-wrap">
+            <label class="sr-only">Phone Number<span class="req">*</span></label>
+            <input name="emailaddress" placeholder="Phone Number" class="phone" type="email" required />
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <label class="sr-only">Set A Password<span class="req">*</span></label>
+                <input type="password"required placeholder="Password" class="password" autocomplete="off"/>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <label class="sr-only">Set A Password<span class="req">*</span></label>
+                <input type="password"required placeholder="Confirm Password" class="password" autocomplete="off"/>
+            </div>
+        </div>
+        <input name="submit" class="btn" type="submit" value="CREATE" />
+    </form>
+</div>
+<script>
+</script>    
+</body>
+</html>

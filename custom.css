@@ -7,12 +7,29 @@
     color: white;
     background-color: #0B232F;
 }
-.nav navbar-nav{
-  float: right
-}
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:active {
     outline: none;
+}
+nav{
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background: #E0E7EF;
+  color: white;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li:hover{
+  background: #E0E7EF;
+  border-bottom: 5px solid  #2D3A4B;
+  padding-bottom: 15px;
 }
 
 
