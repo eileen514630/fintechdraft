@@ -110,39 +110,58 @@ height: 90%;
 position: absolute;
 left:66%;
 top:50px;
-padding-top: 5%
+padding-top: 5%;
+padding-right: 2%
 }
 h2 {
   color: black;
   font-family: century_gothic;
-  font-style: bold
+  font-weight: 900;
+  font-size: 30pt
 }
 
 #icon1{
-  width: 50%;
+  width: 45%;
   position: relative;
- bottom: 10px;
+ top:50px;
 
 }
 #how1{
   font-family: calibri;
   color: black;
-  font-size: 12pt;
+  font-size: 15pt;
   position: relative;
-  bottom: 10px
+  top:80px;
 }
 #icon2{
-width: 30%;
+width: 25%;
 position: relative;
+top: 40px;
+right: 10px
 
 }
-
+#how2{
+  font-family: calibri;
+  color: black;
+  font-size: 15pt;
+  position: relative;
+  top:77px;
+  right: 10px
+}
 #icon3{
-width: 40%;
+width: 45%;
 position: relative;
+top:50px;
 
 }
-
+#how3{
+  font-family: calibri;
+  color: black;
+  font-size: 15pt;
+  position: relative;
+  top:85px;
+  right: 15px
+}
 /*video*/
 
 .video {
@@ -177,15 +196,17 @@ padding: 4% 3% 3% 3%
 }
 h3{
   color: black;
-  font-size: 200%;
+  font-size:20pt;
   font-weight: 900;
   letter-spacing: 3pt;
   font-family: century_gothic;
 }
 #description{
   color: black;
-  font-size: 100%;
+  font-size: 12pt;
   font-family: calibri;
+  position: relative;
+  top:20px;
 }
 
 /*login*/
@@ -233,6 +254,7 @@ form {
     background-clip: padding-box;
     background: #2A2A3C; 
     overflow: hidden; 
+    font-family: calibri;
 }
 
 input {
@@ -288,7 +310,7 @@ input:focus{
   -webkit-border-radius: 11;
   -moz-border-radius: 11;
   border-radius: 11px;
-  font-family: Georgia;
+  font-family: calibri;
   color: #ffffff;
   font-size: 20px;
   background: #F39800;
