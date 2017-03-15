@@ -5,7 +5,7 @@ html {
 /*字體*/
 @font-face {
       font-family: gill_sans_mt;
-      src: url(fonts/gill_sans_mt.ttf);
+      src: url(fonts/gill_sans_mt.TTF);
 }
 @font-face {
       font-family: calibri;
@@ -13,7 +13,7 @@ html {
 }
 @font-face {
       font-family: century_gothic;
-      src: url(fonts/century_gothic.ttf);
+      src: url(fonts/century_gothic.TTF);
 }
 /*navbar*/
 .navbar {
