@@ -12,8 +12,8 @@ html {
       src: url(fonts/calibri.ttf);
 }
 @font-face {
-      font-family: century_gothic;
-      src: url(fonts/century_gothic.TTF);
+      font-family: century_gothic_bold;
+      src: url(fonts/century_gothic_bold.TTF);
 }
 /*navbar*/
 .navbar {
@@ -137,7 +137,7 @@ padding-right: 2%
 }
 h2 { /*how it work*/
   color: black;
-  font-family: century_gothic;
+  font-family: century_gothic_bold;
   font-weight: 900;
   font-size: 3vw
 }
@@ -233,7 +233,7 @@ h3{ /*Fintech:silicon*/
   font-size:2vw;
   font-weight: 900;
   letter-spacing: 3pt;
-  font-family: century_gothic;
+  font-family: century_gothic_bold;
 }
 #description{
   color: black;
