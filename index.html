@@ -4,64 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <title>FinTech</title>
+    <title>FinTech Draft</title>
     <!--載入bootstrap-->
     <link rel="stylesheet" type="text/css" href="plugin/bootstrap-3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="plugin/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <!--載入自己寫的css-->
-    <link rel="stylesheet" type="text/css" href="custom.css">
     <!--載入jQuery-->
     <script type="text/javascript" src="plugin/jquery-3.1.1/jquery-3.1.1.min.js"></script>
-    <script src="custom.js"></script>
+    <!--載入自己寫的css-->
+    <link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 
 <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <!-- Navbar header left -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <!--small device-->
-                    <span class="sr-only"> Toggle navigation </span>
-                    <!-- Part of span appearence -->
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- Setting brand name -->
+                <div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#FinNavbar" aria-expanded="false">
+                        <span class="sr-only"> Toggle navigation </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
                 <img src="img/studiomark.png" id="studiomark">
             </div>
             <!-- Navbar header right -->
-            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height:1px;">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-top current" href="#home">HOME</a>
-                    </li>
-                    <li>
-                        <a class="about-click current" href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="video-click current" href="#video">VIDEO</a>
-                    </li>
-                    <li>
-                        <a class="login-click current" href="#login">LOGIN</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="FinNavbar">
+                <ul class="nav navbar-nav navbar-right" id="choices">
+                    <li><a class="page-top current" href="#home">HOME</a></li>
+                    <li><a class="about-click current" href="#about">ABOUT</a></li>
+                    <li><a class="video-click current" href="#video">VIDEO</a></li>
+                    <li><a class="login-click current" href="#login">LOGIN</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 
-<body style="background-color: #E0E7EF">
+<body>
     <div class="container">
         <div class="row">
-            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2"></div>
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="wrapper">
+            <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" id="wrapper">
                 <!--home start-->
                 <div class="home" id="home">
                     <h1 id="fintech">FINTECH</h1>
                     <img src="img/chart.png" id="chart">
                     <img src="img/creditcard.png" id="creditcard">
+                    <p id="hint">EXPERIENCE OUR WORK</p>
+                    <img src="img/mouse.png" id="home_mouse">
+                    <img src="img/line.png" id="home_line">
                 </div>
                 <!--home end-->
                 <!--about starts-->
@@ -85,7 +77,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
+                    <img src="img/mouse.png" id="about_mouse">
+                    <img src="img/line.png" id="about_line">  
                 </div>
                 <!--about end-->
                 <!--video starts-->
@@ -100,65 +94,67 @@
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1XWdaHzKAgk" frameborder="0" allowfullscreen></iframe> 
                             </div>
                         </div>
-                    </div>     
+                    </div> 
+                    <img src="img/mouse.png" id="video_mouse">
+                    <img src="img/line.png" id="video_line">     
                 </div>
                 <!--video end-->
                 <!--login starts-->
                 <div class="login" id="login">
-
-                                <div id="darkblue"></div>
-                                <img src="img/phone.png" id="pic3">    
-                            <!--fomr starts--> 
-                             
-                                <div class="form" id="info">
-                                    <form action="/" method="post">
-                                        <h4>Create an Account for Free</h4>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                <div class="form-group">
-                                                    <label class="sr-only">First Name<span class="req">*</span></label>
-                                                    <input name="name" placeholder="First Name" class="name" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                <div class="form-group">
-                                                    <label class="sr-only">Last Name<span class="req">*</span></label>
-                                                    <input name="name" placeholder="Last Name" class="name" required />
-                                                </div>
-                                            </div>
+                    <div id="darkblue"></div>
+                        <!--form starts--> 
+                        <div class="form" id="form">
+                            <form action="/" method="post">
+                                <h4>Create an Account for Free</h4>
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label class="sr-only">First Name<span class="req">*</span></label>
+                                            <input name="name" placeholder="First Name" class="name" required />
                                         </div>
-                                        <div class="field-wrap">
-                                            <label class="sr-only">Email Address<span class="req">*</span></label>
-                                            <input name="emailaddress" placeholder="Email Address" class="email" type="email" required />
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label class="sr-only">Last Name<span class="req">*</span></label>
+                                            <input name="name" placeholder="Last Name" class="name" required />
                                         </div>
-                                        <div class="field-wrap">
-                                            <label class="sr-only">Phone Number<span class="req">*</span></label>
-                                            <input name="emailaddress" placeholder="Phone Number" class="phone" type="email" required />
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                <label class="sr-only">Set A Password<span class="req">*</span></label>
-                                                <input type="password"required placeholder="Password" class="password" autocomplete="off"/>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                <label class="sr-only">Set A Password<span class="req">*</span></label>
-                                                <input type="password"required placeholder="Confirm password" class="password" autocomplete="off"/>
-                                            </div>
-                                        </div>
-                                        <div class="field-wrap">
-                                            <label class="sr-only">Submit<span class="req">*</span></label>
-                                            <input name="submit" class="btn" type="submit" value="CREATE" />
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
+                                <div class="field-wrap">
+                                    <label class="sr-only">Email Address<span class="req">*</span></label>
+                                    <input name="emailaddress" placeholder="Email Address" class="email" type="email" required />
+                                </div>
+                                <div class="field-wrap">
+                                    <label class="sr-only">Phone Number<span class="req">*</span></label>
+                                    <input name="emailaddress" placeholder="Phone Number" class="phone" type="email" required />
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <label class="sr-only">Set A Password<span class="req">*</span></label>
+                                        <input type="password"required placeholder="Password" class="password" autocomplete="off"/>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <label class="sr-only">Set A Password<span class="req">*</span></label>
+                                        <input type="password"required placeholder="Confirm password" class="password" autocomplete="off"/>
+                                    </div>
+                                </div>
+                                <div class="field-wrap">
+                                    <label class="sr-only">Submit<span class="req">*</span></label>
+                                    <input name="submit" class="btn" type="submit" value="CREATE" />
+                                </div>
+                            </form>
+                        </div>
                             
-                            <!--form end-->
-                        
-                    
+                        <!--form end-->
+
+                        <div>
+                            <img src="img/phone.png" id="phone">
+                        </div>    
+                    <!--darkblue end-->   
                 </div>
                 <!--login end-->
             </div> 
-            <div class="col-xs-0 col-sm-2 col-md-2 col-lg-2"></div>
+            <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
     </div>
 <script >

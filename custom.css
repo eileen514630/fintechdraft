@@ -17,25 +17,26 @@ html {
 }
 /*navbar*/
 .navbar {
-    background-color: #E0E7EF;
-    color: #2D3A4B;
+  background-color:  #E0E7EF;
 }
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:active {
-    outline: none;
+.navbar-header{
+  background-color: #E0E7EF;
+  position: absolute;
+  left:5%;
 }
-.navbar-collapse ul li{
+.navbar-collapse ul li a{
+  background-color:  #E0E7EF;
+  color: #2B394A!important;
   list-style: none;
-  padding: 0;
-  margin: 0;
   font-family: calibri;
   font-size: 16pt;
+  padding-bottom: 0.5rem;
 }
 .navbar-collapse ul li:hover{
-  border-bottom: 5px solid  #2D3A4B;
-  padding-bottom: 0px;
+  background-color:  #E0E7EF;
+  border-bottom: 3px solid  #2B394A;
   font-family: calibri;
-  color: #2B394A
+  color: #2B394A;
 }
 #studiomark{
   width:38%;
@@ -44,6 +45,7 @@ html {
 
 /*主體*/
 body {
+  background-color: #E0E7EF;
   width: 100%;
   height: 100%;
 }
@@ -58,35 +60,55 @@ body {
   color: white;
   font-family: gill_sans_mt;
   font-size: 120pt;
-  z-index: 0
+  padding-top: 2%;
+  z-index: 0;
 }
-#home h1{
-font-size: 80%;
-letter-spacing: 15pt;
+h1{ /*FINTECH*/
+font-size: 110%;
+letter-spacing: 10pt;
 padding-top: 2%;
-z-index: 2
+z-index: 2;
+position: relative;
 } 
 #chart{
   width:80%;
   position: relative;
-  left: 20%;
-  top:-50px;
-  z-index: 1
+  left: 23%;
+  top:-80px;
+  z-index: 1;
 }
 #creditcard{
   width:30%;
   position: absolute;
   right:83%;
-  z-index: -1
+  z-index: -1;
 }
-
+#home_mouse{
+  width: 2.5%;
+  position: absolute;
+  left:16%;
+  top:16%;
+}
+#home_line{
+ width: 0.75%;
+ position: absolute;
+  left:16.85%;
+  top:15.5%;
+}
+#hint{
+  font-size: 13%;
+  position: absolute;
+  left:8%;
+  top:14%;
+  font-family: calibri;
+}
 /*about*/
 .about {
-  background:#2B394A;
+  background: red/*#2B394A*/;
   display: table;
   width: 100%;
   height: 100%;
-  padding-top: 20%;
+  padding-top: 12%;
   padding-bottom: 15%
 }
 #brown{
@@ -113,23 +135,23 @@ top:50px;
 padding-top: 5%;
 padding-right: 2%
 }
-h2 {
+h2 { /*how it work*/
   color: black;
   font-family: century_gothic;
   font-weight: 900;
-  font-size: 30pt
+  font-size: 3vw
 }
 
-#icon1{
+#icon1{ 
   width: 45%;
   position: relative;
  top:50px;
 
 }
-#how1{
+#how1{ /*invest anytime*/
   font-family: calibri;
   color: black;
-  font-size: 15pt;
+  font-size: 1.5vw;
   position: relative;
   top:80px;
 }
@@ -140,10 +162,10 @@ top: 40px;
 right: 10px
 
 }
-#how2{
+#how2{ /*watch it grow*/
   font-family: calibri;
   color: black;
-  font-size: 15pt;
+  font-size: 1.5vw;
   position: relative;
   top:77px;
   right: 10px
@@ -154,22 +176,34 @@ position: relative;
 top:50px;
 
 }
-#how3{
+#how3{ /*withdraw anytime*/
   font-family: calibri;
   color: black;
-  font-size: 15pt;
+  font-size: 1.5vw;
   position: relative;
   top:85px;
   right: 15px
 }
-/*video*/
+#about_mouse{
+  width: 1.5%;
+  position: absolute;
+  right: 15%;
+  top:45%;
+}
+#about_line{
+ width: 0.5%;
+ position: absolute;
+ right: 15.5%;
+  top:44.5%;
+}
 
+/*video*/
 .video {
-  background:#2B394A;
+  background: yellow/*#2B394A*/;
   display: table;
   width: 100%;
   height: 100%;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 15%
   }
 #red{
@@ -194,19 +228,31 @@ top:25%;
 right:90%;
 padding: 4% 3% 3% 3%
 }
-h3{
+h3{ /*Fintech:silicon*/
   color: black;
-  font-size:20pt;
+  font-size:2vw;
   font-weight: 900;
   letter-spacing: 3pt;
   font-family: century_gothic;
 }
 #description{
   color: black;
-  font-size: 12pt;
+  font-size: 1.2vw;
   font-family: calibri;
   position: relative;
   top:20px;
+}
+#video_mouse{
+ width:2%;
+  position: absolute;
+  bottom: 33%;
+right:-2%
+}
+#video_line{
+width: 0.75%;
+ position: absolute;
+bottom: 31%;
+right:-1.5%
 }
 
 /*login*/
@@ -215,40 +261,38 @@ h3{
   display: table;
   width: 100%;
   height: 100%;
-padding-top: 15%;
+padding-top: 10%;
 padding-bottom: 20%
 }
 
 #darkblue{
   background-color: #2C2B3B;
-  width:30%;
-  height: 17.1%;
+}
+#phone{
+  width: 18%;
   position: absolute;
-left:-12%
+  bottom: 7%;
+  left: 3%
 
 }
-#pic3{
-  height:13%;
-  position: absolute;
-  bottom:7%;
-  left: -8%
-}
-h4{
+h4{ /*create an account for free*/
   color: white;
-  font-size: 32pt;
+  font-size: 3vw;
   font-family: century_gothic;
+  padding-bottom: 5%;
+  padding-top: 5%
 }
 
 form {
     margin-left:auto;
     margin-right:auto;
-    width: 100%;
+    width: 110%;
     height: 100%;
     padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 30%;
     padding-bottom: 5%;
     position: relative;
-    left: 15%;
+    right:5%;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -258,7 +302,7 @@ form {
 }
 
 input {
-    height: 48px;
+    height: 50px;
     width:100%;
     border: 1px solid rgba(255,255,255,.4);
     border-radius: 9px;
