@@ -65,7 +65,7 @@ body {
 }
 h1{ /*FINTECH*/
 font-size: 110%;
-letter-spacing: 10pt;
+letter-spacing: 20pt;
 padding-top: 2%;
 z-index: 2;
 position: relative;
@@ -113,7 +113,7 @@ position: relative;
   left:16.85%;
   top:15.5%;
 }
-#hint{
+#hint{ /*experience our work*/
   font-size: 13%;
   position: absolute;
   left:8%;
@@ -357,14 +357,14 @@ padding: 4% 3% 3% 3%
 }
 h3{ /*Fintech:silicon*/
   color: black;
-  font-size:2vw;
+  font-size:2.5vw;
   font-weight: 900;
   letter-spacing: 3pt;
   font-family: century_gothic_bold;
 }
 #description{
   color: black;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   font-family: calibri;
   position: relative;
   top:20px;
@@ -423,7 +423,7 @@ padding-bottom: 20%
 h4{ /*create an account for free*/
   color: white;
   font-size: 3vw;
-  font-family: calibri;
+  font-family: century_gothic_bold;
   padding-bottom: 5%;
   padding-top: 5%
 }
