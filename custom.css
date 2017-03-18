@@ -158,45 +158,27 @@ h2 { /*how it work*/
   font-size: 3vw
 }
 
+.hideme1{
+opacity:0;
+}
+.hideme2{
+opacity:0;
+}
+.hideme3{
+opacity:0;
+}
 #icon1{ 
   width: 45%;
   position: relative;
- top:50px;
-  -webkit-animation-name: icon1; /*動畫名稱*/
-  -moz-animation-name: icon1;
-  -webkit-animation-duration: 0.5s; 
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-iteration-count: 1; /*重複次數*/
-  -moz-animation-iteration-count: 1;
+  top:50px;
 }
-@-webkit-keyframes icon1 {
-  0%{ opacity: 0 }
-  100%{ opacity: 1}
-}
-@-moz-keyframes icon1{
-  0%{ opacity: 0}
-  100%{ opacity: 1}
-}
+
 #how1{ /*invest anytime*/
   font-family: calibri;
   color: black;
   font-size: 1.5vw;
   position: relative;
   top:80px;
-  -webkit-animation-name: how1; /*動畫名稱*/
-  -moz-animation-name: how1;
-  -webkit-animation-duration: 0.5s; 
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-iteration-count: 1; /*重複次數*/
-  -moz-animation-iteration-count: 1;
-}
-@-webkit-keyframes how1 {
-  0%{ opacity: 0 }
-  100%{ opacity: 1}
-}
-@-moz-keyframes how1{
-  0%{ opacity: 0}
-  100%{ opacity: 1}
 }
 
 #icon2{
@@ -204,22 +186,6 @@ width: 25%;
 position: relative;
 top: 40px;
 right: 10px;
-  -webkit-animation-name: icon2; /*動畫名稱*/
-  -moz-animation-name: icon2;
-  -webkit-animation-duration: 1s; 
-  -moz-animation-duration: 1s;
-  -webkit-animation-iteration-count: 1; /*重複次數*/
-  -moz-animation-iteration-count: 1;
-}
-@-webkit-keyframes icon2 {
-  0%{ opacity: 0 }
-  50% {opacity: 0}
-  100%{ opacity: 1}
-}
-@-moz-keyframes icon2{
-  0%{ opacity: 0}
-  50% {opacity: 0}
-  100%{ opacity: 1}
 }
 #how2{ /*watch it grow*/
   font-family: calibri;
@@ -228,43 +194,11 @@ right: 10px;
   position: relative;
   top:77px;
   right: 10px;
-  -webkit-animation-name: how2; /*動畫名稱*/
-  -moz-animation-name: how2;
-  -webkit-animation-duration: 1s; 
-  -moz-animation-duration: 1s;
-  -webkit-animation-iteration-count: 1; /*重複次數*/
-  -moz-animation-iteration-count: 1;
-}
-@-webkit-keyframes how2 {
-  0%{ opacity: 0 }
-  50% {opacity: 0}
-  100%{ opacity: 1}
-}
-@-moz-keyframes how2{
-  0%{ opacity: 0}
-  50% {opacity: 0}
-  100%{ opacity: 1}
 }
 #icon3{
 width: 45%;
 position: relative;
 top:50px;
-  -webkit-animation-name: icon3; /*動畫名稱*/
-  -moz-animation-name: icon3;
-  -webkit-animation-duration: 1.5s; 
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: 1; /*重複次數*/
-  -moz-animation-iteration-count: 1;
-}
-@-webkit-keyframes icon3 {
-  0%{ opacity: 0 }
-  67% {opacity: 0}
-  100%{ opacity: 1}
-}
-@-moz-keyframes icon3{
-  0%{ opacity: 0}
-  67% {opacity: 0}
-  100%{ opacity: 1}
 }
 #how3{ /*withdraw anytime*/
   font-family: calibri;
@@ -273,28 +207,12 @@ top:50px;
   position: relative;
   top:85px;
   right: 15px;
-  -webkit-animation-name: how3; /*動畫名稱*/
-  -moz-animation-name: how3;
-  -webkit-animation-duration: 1.5s; 
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: 1; /*重複次數*/
-  -moz-animation-iteration-count: 1;
-}
-@-webkit-keyframes how3 {
-  0%{ opacity: 0 }
-  67% {opacity: 0}
-  100%{ opacity: 1}
-}
-@-moz-keyframes how3{
-  0%{ opacity: 0}
-  67% {opacity: 0}
-  100%{ opacity: 1}
 }
 #about_mouse{
   width: 2.5%;
   position: absolute;
-  -webkit-animation-name: mouse2; /*動畫名稱*/
-  -moz-animation-name: mouse2;
+  -webkit-animation-name: about_mouse; /*動畫名稱*/
+  -moz-animation-name: about_mouse;
   -webkit-animation-duration: 1s; 
   -moz-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite; /*重複次數*/
@@ -304,12 +222,12 @@ top:50px;
   -webkit-animation-timing-function: linear; /*速度一致*/
   -moz-animation-timing-function: linear;
 }
-@-webkit-keyframes mouse2 {
-  0%{ right: 14.6%;top:45%; }
+@-webkit-keyframes about_mouse {
+  0%{ right: 14.6%;top:44.7%; }
   100%{ right: 14.6%; top:46%}
 }
-@-moz-keyframes mouse2{
-  0%{ right: 14.6%;top:45%; }
+@-moz-keyframes about_mouse{
+  0%{ right: 14.6%;top:44.7%; }
   100%{ right: 14.6%; top:46%}
 }
 
@@ -317,7 +235,7 @@ top:50px;
  width: 0.75%;
  position: absolute;
  right: 15.5%;
-  top:44.5%;
+  top:44.4%;
 }
 
 /*video*/
