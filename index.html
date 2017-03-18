@@ -64,16 +64,16 @@
                             <h2>How It Works</h2>
                             <div class="row">
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <img src="img/icon1.png" id="icon1">
-                                    <p id="how1">Invest Anytime</p>
+                                    <img src="img/icon1.png" class="hideme1" id="icon1">
+                                    <p class="hideme1" id="how1">Invest Anytime</p>
                                 </div>
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <img src="img/icon2.png" id="icon2">
-                                    <p id="how2">Watch it Grow</p>
+                                    <img src="img/icon2.png" class="hideme2" id="icon2">
+                                    <p class="hideme2" id="how2">Watch it Grow</p>
                                 </div>
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <img src="img/icon3.png" id="icon3">
-                                    <p id="how3">Withdraw Anytime</p>
+                                    <img src="img/icon3.png" class="hideme3" id="icon3">
+                                    <p class="hideme3" id="how3">Withdraw Anytime</p>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,11 @@
     </div>
 <script >
     $('.about-click').click(function(){
+        $("#icon1").fadeIn();
+        $("#icon2").fadeIn("slow");
+        $("#icon3").fadeIn(3000);
         $('html,body').animate({scrollTop:$('#about').offset().top},800);
+
     });
     $('.video-click').click(function(){
         $('html,body').animate({scrollTop:$('#video').offset().top},800);
@@ -178,6 +182,35 @@
     $('.login-click').click(function(){
         $('html,body').animate({scrollTop:$('#login').offset().top},800);
     });
+    $(window).scroll( function(){
+        $('.hideme1').each( function(i){    
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},1000);
+            }    
+        }); 
+    });
+    $(window).scroll( function(){
+        $('.hideme2').each( function(i){    
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},1500);
+            }    
+        }); 
+    });
+    $(window).scroll( function(){
+        $('.hideme3').each( function(i){    
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},2000);
+            }    
+        }); 
+    });
+   
+
 </script>    
 </body>
 </html>
