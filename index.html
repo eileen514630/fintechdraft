@@ -169,12 +169,9 @@
         </div>
     </div>
 <script >
+$(document).ready(function(){
     $('.about-click').click(function(){
-        $("#icon1").fadeIn();
-        $("#icon2").fadeIn("slow");
-        $("#icon3").fadeIn(3000);
         $('html,body').animate({scrollTop:$('#about').offset().top},800);
-
     });
     $('.video-click').click(function(){
         $('html,body').animate({scrollTop:$('#video').offset().top},800);
@@ -209,8 +206,7 @@
             }    
         }); 
     });
-   
-
+});
 </script>    
 </body>
 </html>
