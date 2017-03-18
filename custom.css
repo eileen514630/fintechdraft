@@ -86,10 +86,8 @@ position: relative;
 #home_mouse{
   width: 2.5%;
   position: absolute;
-  left:16%;
-  top:16%;
-  -webkit-animation-name: mouse1; /*動畫名稱*/
-  -moz-animation-name: mouse1;
+  -webkit-animation-name: home_mouse; /*動畫名稱*/
+  -moz-animation-name: home_mouse;
   -webkit-animation-duration: 1s; 
   -moz-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite; /*重複次數*/
@@ -99,25 +97,25 @@ position: relative;
   -webkit-animation-timing-function: linear; /*速度一致*/
   -moz-animation-timing-function: linear;
 }
-@-webkit-keyframes mouse1 {
-  0%{ left:16%;top:16%; }
-  100%{ left:16%; top:17.5%}
+@-webkit-keyframes home_mouse {
+  0%{ left:16%;top:18%; }
+  100%{ left:16%; top:19.5%}
 }
-@-moz-keyframes mouse1{
-  0%{ left:16%;top:16%; }
-  100%{ left:16%; top:17.5%}
+@-moz-keyframes home_mouse{
+  0%{ left:16%;top:18%; }
+  100%{ left:16%; top:19.5%}
 }
 #home_line{
  width: 0.75%;
  position: absolute;
   left:16.85%;
-  top:15.5%;
+  top:17.5%;
 }
 #hint{ /*experience our work*/
   font-size: 13%;
   position: absolute;
   left:8%;
-  top:14%;
+  top:16%;
   font-family: calibri;
 }
 /*about*/
@@ -293,10 +291,8 @@ top:50px;
   100%{ opacity: 1}
 }
 #about_mouse{
-  width: 1.5%;
+  width: 2.5%;
   position: absolute;
-  right: 15%;
-  top:45%;
   -webkit-animation-name: mouse2; /*動畫名稱*/
   -moz-animation-name: mouse2;
   -webkit-animation-duration: 1s; 
@@ -309,16 +305,16 @@ top:50px;
   -moz-animation-timing-function: linear;
 }
 @-webkit-keyframes mouse2 {
-  0%{ right: 15%;top:45%; }
-  100%{ right: 15%; top:46%}
+  0%{ right: 14.6%;top:45%; }
+  100%{ right: 14.6%; top:46%}
 }
 @-moz-keyframes mouse2{
-  0%{ right: 15%;top:45%; }
-  100%{ right: 15%; top:46%}
+  0%{ right: 14.6%;top:45%; }
+  100%{ right: 14.6%; top:46%}
 }
 
 #about_line{
- width: 0.5%;
+ width: 0.75%;
  position: absolute;
  right: 15.5%;
   top:44.5%;
@@ -370,10 +366,8 @@ h3{ /*Fintech:silicon*/
   top:20px;
 }
 #video_mouse{
- width:2%;
+ width:2.5%;
   position: absolute;
-  bottom: 33%;
-  right:-2%;
   -webkit-animation-name: mouse3; /*動畫名稱*/
   -moz-animation-name: mouse3;
   -webkit-animation-duration: 1s; 
@@ -386,18 +380,18 @@ h3{ /*Fintech:silicon*/
   -moz-animation-timing-function: linear;
 }
 @-webkit-keyframes mouse3 {
-  0%{ right: -2%;bottom: 33%; }
-  100%{ right: -2%;bottom: 32%}
+  0%{ right: 14.6%;bottom: 29.5%; }
+  100%{ right: 14.6%;bottom: 28%}
 }
 @-moz-keyframes mouse3 {
-  0%{ right: -2%;bottom: 33%; }
-  100%{ right: -2%; bottom: 32%}
+  0%{ right: 14.6%;bottom: 29.5%; }
+  100%{ right: 14.6%; bottom: 28%}
 }
 #video_line{
 width: 0.75%;
  position: absolute;
-bottom: 31%;
-right:-1.5%
+bottom: 27.6%;
+right:15.5%
 }
 
 /*login*/
@@ -425,7 +419,8 @@ h4{ /*create an account for free*/
   font-size: 3vw;
   font-family: century_gothic_bold;
   padding-bottom: 5%;
-  padding-top: 5%
+  padding-top: 5%;
+  text-align: center;
 }
 
 form {
